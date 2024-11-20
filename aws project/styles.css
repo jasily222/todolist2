@@ -1,0 +1,150 @@
+/* Default dark mode styles */
+body {
+    background-color: #083062; /* Navy blue background */
+    color: rgb(255, 255, 0); /* Yellow text */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.light-mode {
+    background-color: rgb(255, 255, 0); /* Yellow background */
+    color: #083062; /* Navy blue text */
+}
+
+/* Style navigation bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #083062; /* Navy blue background for dark mode */
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 15px 20px;
+    display: block;
+    color: yellow; /* Link text color in dark mode */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #215da1; /* Hover background color for navigation items */
+}
+
+nav.light-mode ul {
+    background: rgb(255, 255, 0); /* Yellow background for light mode */
+}
+
+nav.light-mode ul li a {
+    color: #083062; /* Link text color in light mode */
+}
+
+nav.light-mode ul li a:hover {
+    background: #ffcc00; /* Hover background color for navigation items in light mode */
+}
+
+/* Style for buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ffeb3b; /* Bright yellow button background color */
+    color: #000080; /* Navy blue text for buttons */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ffd700; /* Slightly darker yellow when hovering */
+}
+
+.light-mode .btn {
+    background: #083062; /* Navy blue button background for light mode */
+    color: rgb(255, 255, 0); /* Yellow text for buttons in light mode */
+}
+
+.light-mode .btn:hover {
+    background: #215da1; /* Hover background for buttons in light mode */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+/* Calendar styles */
+.calendar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-grid div {
+    padding: 15px;
+    border: 1px solid #ccc;
+    min-height: 80px;
+    background-color: white; /* Default calendar cell background */
+    color: black; /* Default calendar cell text */
+}
+
+.light-mode .calendar-grid div {
+    background-color: #083062; /* Navy blue background for calendar cells in light mode */
+    color: rgb(255, 255, 0); /* Yellow text for calendar cells in light mode */
+}
+
+.calendar-grid .day-header {
+    font-weight: bold;
+}
+.faq-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    background-color: #215da1;
+    color: yellow;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #083062;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: black;
+    border-top: 1px solid #ccc;
+}
