@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        <li><a href="add-task.html">Add Task</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="completed-tasks.html">Completed Tasks</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Profile</h1>
+        <p id="profile-info">
+            Name: <span id="profile-name">John Doe</span><br>
+            Email: <span id="profile-email">johndoe@example.com</span>
+        </p>
+        <button id="edit-profile-button" class="btn">Edit Profile</button>
+
+        <div id="edit-profile-form" style="display: none;">
+            <h2>Edit Profile</h2>
+            <form id="profile-form">
+                <label for="new-name">Name:</label>
+                <input type="text" id="new-name"><br>
+                <label for="new-email">Email:</label>
+                <input type="email" id="new-email"><br>
+                <input type="submit" value="Save Changes">
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

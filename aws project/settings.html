@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="add-task.html">Add Task</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="completed-tasks.html">Completed Tasks</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Settings</h1>
+        <form id="settings-form">
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select">
+                <option value="dark" selected>Dark Mode</option>
+                <option value="light">Light Mode</option>
+            </select><br>
+            <label for="notifications">Enable Notifications:</label>
+            <input type="checkbox" id="notifications"><br>
+            <input type="submit" value="Save Settings">
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
